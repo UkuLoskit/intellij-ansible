@@ -33,9 +33,6 @@ patchPluginXml {
     version project['version']
 }
 
-publishPlugin {
-    apply from: "jetbrains.account"
-}
 
 repositories {
     mavenCentral()

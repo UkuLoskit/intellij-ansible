@@ -63,5 +63,12 @@
         <documentationProvider
                 implementation="lv.kid.vermut.intellij.yaml.reference.AnsibleVariableValuesDocumentationProvider"/>
 
+
     </extensions>
+    <actions>
+        <action id="EditorBasics.Vault" class="lv.kid.vermut.intellij.yaml.Vault" text="Encrypt"
+                description="Illustrates how to plug an action in">
+            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+        </action>
+    </actions>
 </idea-plugin>
