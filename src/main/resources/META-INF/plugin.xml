@@ -66,9 +66,17 @@
 
     </extensions>
     <actions>
-        <action id="EditorBasics.Vault" class="lv.kid.vermut.intellij.yaml.Vault" text="Encrypt"
+        <!--<action id="EditorBasics.Vault" class="lv.kid.vermut.intellij.yaml.FileDecryptionActionon" text="Encrypt"-->
+                <!--description="Illustrates how to plug an action in">-->
+            <!--<add-to-group group-id="EditorPopupMenu" anchor="last"/>-->
+        <!--</action>-->
+        <action id="AnsibleVault.EncryptFile" class="lv.kid.vermut.intellij.yaml.actions.FileEncryptionAction" text="Encrypt"
+                >
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
+        </action>
+        <action id="AnsibleVault.DecryptFile" class="lv.kid.vermut.intellij.yaml.actions.FileDecryptionAction" text="Decrypt"
                 description="Illustrates how to plug an action in">
-            <add-to-group group-id="EditorPopupMenu" anchor="last"/>
+            <add-to-group group-id="ProjectViewPopupMenu" anchor="last"/>
         </action>
     </actions>
 </idea-plugin>
